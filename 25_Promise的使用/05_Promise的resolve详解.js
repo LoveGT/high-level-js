@@ -5,6 +5,14 @@
  *  3> 传入一个对象， 并且这个对象有实现then方法，那么也会执行该then方法， 并且又该then方法决定后续状态
  */
 
+// 第一种参数案例
+  new Promise((resolve, reject) =>{
+    resolve(111)
+  }).then(res => {
+    console.log(res, 'res');
+  }).catch(err => {
+    console.log(err, 'err');
+  })
 // 第二种参数案例
 // const newPromise = new Promise((resolve, reject) => {
 //   reject(2222);
